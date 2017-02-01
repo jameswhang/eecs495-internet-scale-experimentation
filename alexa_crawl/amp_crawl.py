@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 AMP_SCRIPT = "https://cdn.ampproject.org/v0.js"
-ALEXA_SITES = open('alexa500.txt').readlines()
+ALEXA_SITES = open('alexa500_US.txt').readlines()
 ALEXA_AMP_ANALYTICS = open('alexa500_amp_nalyzed.txt', 'wb')
 URL_FORMAT = 'http://www.{url}'
 
@@ -34,27 +34,36 @@ def write_to_result(site, is_amp, amp_site=None):
         print site + ' is not an AMP site!!'
         ALEXA_AMP_ANALYTICS.write(site+'\t'+'False\n')
 
-for site in ALEXA_SITES:
-    site = site.replace('\n', '')
-    html = fetch_html(site)
-    is_amp = check_is_amp(html)
+def main():
+    for site in ALEXA_SITES:
+        site = site.replace('\n', '')
+        html = fetch_html(site)
+        is_amp = check_is_amp(html)
 
-    if is_amp:
-        write_to_result(site, True, amp_site=site)
-        continue
-    
-    soup = BeautifulSoup(html)
-    links = soup.find_all('a')
-
-    links_for_this_site = []
-    for link in links:
-        if 'href' not in link:
+        if is_amp:
+            write_to_result(site, True, amp_site=site)
             continue
-        if link['href'] not in links_for_this_site:
-            links_for_this_site.append(link['href'])
+    
+        soup = BeautifulSoup(html)
+        links = soup.find_all('a')
+    
+        links_for_this_site = []
+        for link in links:
+            if 'href' not in link:
+                continue
+            if link['href'] not in links_for_this_site:
+                links_for_this_site.append(link['href'])
 
-    for link in links_for_this_site:
-        html = fetch_html(link)
-        if check_is_amp(html):
-            write_to_result(site, True, amp_site=link)
-            break
+        for link in links_for_this_site:
+            html = fetch_html(link)
+            if check_is_amp(html):
+                write_to_result(site, True, amp_site=link)
+                break
+
+if __name__ == '__main__':
+    """
+    link = 'https://www.washingtonpost.com/news/post-politics/wp/2017/01/30/obama-rejects-comparison-between-trumps-immigration-policy-and-his-own-encourages-protests/?utm_term=.15dd8fbe0c20'
+    html = fetch_html(link)
+    print check_is_amp(html)
+    """
+    main()
