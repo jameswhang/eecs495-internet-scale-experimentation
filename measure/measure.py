@@ -13,7 +13,7 @@ Use Selenium to Measure Web Timing
 from selenium import webdriver
 
 
-SRC = 'wp_sites.txt'
+SRC = 'wp_links_v2.txt'
 
 def measure(site):
     driver = webdriver.Chrome()
