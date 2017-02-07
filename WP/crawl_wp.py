@@ -10,13 +10,15 @@ written_links = []
 
 
 def search_url(url):
-    wp_home = requests.get(WP_URL)
+    try:
+        wp_home = requests.get(WP_URL, timeout=5)
+    except Exception:
+        return
+
+
     wp_home_s = BeautifulSoup(wp_home.text)
 
     all_links = wp_home_s.find_all('a')
-
-
-
 
     for link in all_links:
         try:
@@ -30,11 +32,13 @@ def search_url(url):
         newslink = link.split('https://www.washingtonpost.com/')[1]
         amp_link = 'https://www.washingtonpost.com/amphtml/' + newslink
 
-        if requests.get(amp_link).status_code == 200:
-            if link not in written_links:
-                print link + ',' + amp_link
-                written_links.append(link)
-
+        try:
+            if requests.get(amp_link, timeout=5).status_code == 200:
+                if link not in written_links:
+                    print link + ',' + amp_link
+                    written_links.append(link)
+        except Exception:
+            pass
 
 if __name__ == '__main__':
     for url in INPUT_FILE: 
