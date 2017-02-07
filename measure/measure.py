@@ -15,7 +15,8 @@ from selenium import webdriver
 
 SRC = 'wp_sites.txt'
 
-def measure(driver, site):
+def measure(site):
+    driver = webdriver.Chrome()
     driver.get(site)
     navigationStart = driver.execute_script("return window.performance.timing.navigationStart")    
     eventEnd = driver.execute_script("return window.performance.timing.loadEventEnd")
@@ -26,13 +27,12 @@ def measure(driver, site):
     totalTime = eventEnd - navigationStart
     responseTime = responseEnd - requestStart
 
+    driver.quit()
+
     return str(totalTime), str(responseTime)
 
 
 if __name__ == '__main__':
-
-    driver = webdriver.Chrome()
-
     print 'link,non_amp_total,non_amp_response,amp_total,amp_response'
 
     sites = open(SRC).readlines()
@@ -42,10 +42,7 @@ if __name__ == '__main__':
         non_amp = site.split(',')[0]
         amp = site.split(',')[1].replace('\n', '')
 
-        non_amp_totaltime, non_amp_responsetime = measure(driver, non_amp)
-        amp_totaltime, amp_responsetime = measure(driver, amp)
+        non_amp_totaltime, non_amp_responsetime = measure(non_amp)
+        amp_totaltime, amp_responsetime = measure(amp)
 
         print site + ',' + non_amp_totaltime + ',' + non_amp_responsetime + ',' + amp_totaltime + ',' + amp_responsetime + ''
-        
-
-    driver.quit()
