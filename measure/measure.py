@@ -11,12 +11,14 @@ Use Selenium to Measure Web Timing
 """
 
 from selenium import webdriver
-
+from selenium.webdriver.chrome.options import Options
 
 SRC = 'wp_links_v2.txt'
 
 def measure(site):
-    driver = webdriver.Chrome()
+    opts = Options()
+    opts.add_argument("user-agent=Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>")
+    driver = webdriver.Chrome(chrome_options=opts)
     driver.get(site)
     navigationStart = driver.execute_script("return window.performance.timing.navigationStart")    
     eventEnd = driver.execute_script("return window.performance.timing.loadEventEnd")
