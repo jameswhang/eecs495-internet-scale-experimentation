@@ -23,8 +23,6 @@ def search_url(url):
     wp_home_s = BeautifulSoup(wp_home.text)
     all_links = wp_home_s.find_all('a')
 
-    print all_links
-
     for link in all_links:
         try:
             href = link['href']
