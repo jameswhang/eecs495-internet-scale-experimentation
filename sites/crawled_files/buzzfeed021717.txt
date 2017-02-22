@@ -1,0 +1,53 @@
+[?1049h[?1h=[1;59r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[59;1H"crawl.py" 50L, 1346C[1;1H[93m  1 [m[38;5;81mimport[m requests
+[93m  2 [m[38;5;81mfrom[m bs4 [38;5;81mimport[m BeautifulSoup
+[93m  3 
+  4 [m[96m#INPUT_FILE = open('wp_subdirectories.txt').readlines()[m
+[93m  5 [m[96m#OUTPUT_FILE = open('WPLinks.txt', 'wb')[m
+[93m  6 [mWP_URL = [95m'https://www.buzzfeed.com/'[m
+[93m  7 
+  8 [mlinks = []
+[93m  9 [mwritten_links = []
+[93m 10 
+ 11 
+ 12 [mheaders = {
+[93m 13 [m    [95m'User-Agent'[m: [95m'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'[m,
+[93m 14 [m}
+[93m 15 
+ 16 
+ 17 def[m [1m[96msearch_url[m(url):
+[93m 18 [m    [93mtry[m:
+[93m 19 [m[7C wp_home = requests.get(WP_URL, timeout=[95m5[m, headers=headers)
+[93m 20 [m    [93mexcept[m [38;5;121mException[m:
+[93m 21 [m[7C [1m[96mprint[m [95m'Exception!!'[m
+[93m 22 [m[7C [93mreturn
+ 23 
+ 24 [m    wp_home_s = BeautifulSoup(wp_home.text)
+[93m 25 [m    all_links = wp_home_s.find_all([95m'a'[m)
+[93m 26 
+ 27 [m    [93mfor[m link [93min[m all_links:
+[93m 28 [m[7C [93mtry[m:
+[93m 29 [m[11C href = link[[95m'href'[m]
+[93m 30 [m[11C [93mif[m href.startswith([95m'/'[m):
+[93m 31 [m[15C links.append(href)
+[93m 32 [m[7C [93mexcept[m [38;5;121mException[m:
+[93m 33 [m[11C [93mpass
+ 34 
+ 35 [m    [93mfor[m link [93min[m links:
+[93m 36 [m[7C [96m#newslink = link.split('https://www.buzzfeed.com/')[1][m
+[93m 37 [m[7C amp_link = [95m'https://www.buzzfeed.com/amphtml/'[m + link
+[93m 38 
+ 39 [m[7C [93mtry[m:
+[93m 40 [m[11C [93mif[m requests.get(amp_link, timeout=[95m5[m).status_code == [95m200[m:
+[93m 41 [m[15C [93mif[m link [93mnot[m [93min[m written_links:
+[93m 42 [m[19C [1m[96mprint[m link + [95m','[m + amp_link
+[93m 43 [m[19C written_links.append(link)
+[93m 44 [m[7C [93mexcept[m [38;5;121mException[m:
+[93m 45 [m[11C [93mpass
+ 46 
+ 47 if[m __name__ == [95m'__main__'[m:
+[93m 48 [m    search_url(WP_URL)
+[93m 49 [m    [96m#for url in INPUT_FILE: [m
+[93m 50 [m    [96m#    search_url(url.replace('\n', ''))[m
+[94m~                                                                                                                                                                                                                                                                             [52;1H~                                                                                                                                                                                                                                                                             [53;1H~                                                                                                                                                                                                                                                                             [54;1H~                                                                                                                                                                                                                                                                             [55;1H~                                                                                                                                                                                                                                                                             [56;1H~                                                                                                                                                                                                                                                                             [57;1H~                                                                                                                                                                                                                                                                             [58;1H~                                                                                                                                                                                                                                                                             [1;5H[?12l[?25h[?25l[m[59;1HType  :quit<Enter>  to exit Vim[1;5H[?12l[?25h[?25l[?12l[?25h[59;1H[?1l>[?1049lVim: Caught deadly signal HUP
+Vim: Finished.
+[59;1H
