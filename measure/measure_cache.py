@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 import os
 
-AMP_URL = 'https://www.theguardian.com/us-news/2017/feb/21/donald-trump-immigration-deportation-guidelines-homeland-security,https://amp.theguardian.com/us-news/2017/feb/21/donald-trump-immigration-deportation-guidelines-homeland-security'
+AMP_URL = 'https://amp.theguardian.com/us-news/2017/feb/21/donald-trump-immigration-deportation-guidelines-homeland-security'
 
 ATTEMPT_TIMES = 100
 
