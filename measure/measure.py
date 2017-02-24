@@ -15,7 +15,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 import os
 
-SRC = '/Users/jameswhang/Documents/school/eecs495-ise/eecs495-internet-scale-experimentation/sites/measure_2017_02_13.txt'
+SRC = '/Users/jameswhang/Documents/school/eecs495-ise/eecs495-internet-scale-experimentation/sites/measure_2017_02_21.txt'
 
 ATTEMPT_TIMES = 3
 
@@ -53,8 +53,18 @@ if __name__ == '__main__':
         amp = site.split(',')[1].replace('\n', '')
 
         for i in range(ATTEMPT_TIMES):
-            amp_totaltime, amp_responsetime = measure(amp)
-            non_amp_totaltime, non_amp_responsetime = measure(non_amp)
+            try:
+                amp_totaltime, amp_responsetime = measure(amp)
+            except Exception:
+                amp_totaltime = 'ERROR'
+                amp_responsetime = 'ERROR'
+                sleep(5)  # sleep 5 sec and try again
+            try:
+                non_amp_totaltime, non_amp_responsetime = measure(non_amp)
+            except Exception:
+                sleep(5)  # sleep 5 sec and try again
+                non_amp_totaltime = 'ERROR'
+                non_amp_responsetime = 'ERROR'
             print site + ',' + non_amp_totaltime + ',' + non_amp_responsetime + ',' + amp_totaltime + ',' + amp_responsetime + ',' + str(i)
             sleep(5)  # sleep 5 sec and try again
 
