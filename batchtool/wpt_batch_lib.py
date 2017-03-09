@@ -29,11 +29,7 @@ def __LoadEntity(url, urlopen=urllib2.urlopen):
   Returns:
     The response message
   """
-  try:
-    response = urllib2.urlopen(url)
-  except Exception:
-    return 'Error'
-  #hacked by jtn for up to date python url open
+  response = urllib2.urlopen(url)
 
   return response
 
@@ -79,10 +75,6 @@ def SubmitBatch(url_list, test_params, server_url='http://104.198.155.24/',
     request = server_url + 'runtest.php?%s' % urllib.urlencode(test_params)
     print request
     response = __LoadEntity(request, urlopen)
-    
-    # hack
-    if response == 'Error':
-      continue
     
     return_code = response.getcode()
     if return_code == 200:

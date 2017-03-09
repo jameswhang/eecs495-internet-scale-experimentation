@@ -198,11 +198,11 @@ def main():
                            help='hosted script file')
   option_parser.add_option('-a', '--video', action='store', default=1,
                            help='capture video')
-  option_parser.add_option('-r', '--runs', action='store', default=3,
+  option_parser.add_option('-r', '--runs', action='store', default=1,
                            help='the number of runs per test')
   #VirtualMachine = mac virtualbox, VirtualMachine2 = Desktop vmware
   option_parser.add_option('-o', '--location', action='store',
-                           default='Alex2', help='test location')
+                           default='Alex3', help='test location')
   option_parser.add_option('-m', '--mv', action='store', default=1,
                            help='video only saved for the median run')
 
