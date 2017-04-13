@@ -16,16 +16,15 @@ from time import sleep
 from datetime import date
 import os
 
-SRC = '/Users/jameswhang/Documents/school/eecs495-ise/eecs495-internet-scale-experimentation/sites/measure_2017_02_21.txt'
+SRC = './measure_2017_03_13.txt'
 
 ATTEMPT_TIMES = 1
 
 def measure(site):
     # First flush DNS Cache
-    os.system('sudo /Users/jameswhang/Documents/school/eecs495-ise/eecs495-internet-scale-experimentation/measure/dnsflush.sh')
+    os.system('sudo ./dnsflush_ubuntu.sh')
 
     # Fake User Agent as mobile Safari
-    """
     opts = Options()
     opts.add_argument("user-agent=Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>")
     driver = webdriver.Chrome(chrome_options=opts)
@@ -34,12 +33,11 @@ def measure(site):
     eventEnd = driver.execute_script("return window.performance.timing.loadEventEnd")
 
     requestStart = driver.execute_script("return window.performance.timing.requestStart")
-    responseEnd = driver.execute_script("return window.performance.timing.responseEnd")
+    responseStart = driver.execute_script("return window.performance.timing.responseStart")
 
     chromeTotalTime = eventEnd - navigationStart
     chromeResponseTime = responseStart - requestStart
     driver.quit()
-    """
 
     # Firefox Measurement
     firefox_profile = webdriver.FirefoxProfile()
@@ -47,9 +45,11 @@ def measure(site):
     firefox_profile.set_preference("general.useragent.override", "Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>")
     driver = webdriver.Firefox(firefox_profile=firefox_profile)
     driver.get(site)
+
     navigationStart = driver.execute_script("return window.performance.timing.navigationStart")    
     eventEnd = driver.execute_script("return window.performance.timing.loadEventEnd")
 
+    requestStart = driver.execute_script("return window.performance.timing.requestStart")
     requestStart = driver.execute_script("return window.performance.timing.requestStart")
     responseEnd = driver.execute_script("return window.performance.timing.responseEnd")
 
@@ -64,7 +64,6 @@ def measure(site):
 
 
 if __name__ == '__main__':
-
     todaystr = str(date.today()).replace('-', '_')
 
     chrome_output = open('./measurement_chrome_{today}'.format(today=todaystr), 'wb')
@@ -79,6 +78,9 @@ if __name__ == '__main__':
 
         non_amp = site.split(',')[0]
         amp = site.split(',')[1].replace('\n', '')
+ 
+        measure(amp)
+        measure(non_amp)
 
         for i in range(ATTEMPT_TIMES):
             try:
@@ -96,8 +98,11 @@ if __name__ == '__main__':
                 chrome_res = amp + ',' + non_amp + ',' + namp_res['Chrome'][0] + ',' + namp_res['Chrome'][1] + ',' + amp_res['Chrome'][0] + ',' + amp_res['Chrome'][1] + ',' + str(i) + '\n'
                 firefox_res = amp + ',' + non_amp + ',' + namp_res['Firefox'][0] + ',' + namp_res['Firefox'][1] + ',' + amp_res['Firefox'][0] + ',' + amp_res['Firefox'][1] + ',' + str(i) + '\n'
 
-                chrome_output.write(chrome_res)
-                firefox_output.write(firefox_res)
+                print chrome_res
+                print firefox_res
+
+                #chrome_output.write(chrome_res)
+                #firefox_output.write(firefox_res)
 
             sleep(5)  # sleep 5 sec and try again
 
