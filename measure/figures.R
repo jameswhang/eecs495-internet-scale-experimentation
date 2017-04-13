@@ -1,5 +1,6 @@
 library(ggplot2)
 library(dplyr)
+library(reshape2)
 
 # change these to run on other files
 csv_1 <- 'measurement_final.csv'
@@ -25,13 +26,3 @@ ggplot(load_time_data, aes(value)) +
 ggsave("load_time.png", height = 15, width = 20)
 
 # plot time to first byte by site (AMP vs not)
-"""
-ttfb_data <- filter(melted_data, variable %in% c('amp_response', 'non_amp_response'))
-ggplot(ttfb_data, aes(value)) + 
-  stat_ecdf(aes(group = variable, color = variable), geom = "line") + 
-  facet_wrap(~site) +
-  scale_x_continuous(limits = c(0, 2000)) +
-  labs(x = 'Time to first byte (ms)', y = 'Percent')
-
-ggsave("time_to_first_byte.png", height = 15, width = 20)
-"""
