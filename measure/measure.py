@@ -18,25 +18,50 @@ import os
 
 SRC = './measure_2017_03_13.txt'
 
+TIMING = 'return window.performance.timing.{prop}'
+TIMING_PROPERTIES = [
+    'navigationStart',
+    'unloadEventStart',
+    'unloadEventEnd',
+    'redirectStart',
+    'redirectEnd',
+    'fetchStart',
+    'domainLookupStart',
+    'domainLookupEnd',
+    'connectStart',
+    'connectEnd',
+    'secureConnectionStart',
+    'requestStart',
+    'responseStart',
+    'responseEnd',
+    'domLoading',
+    'domInteractive',
+    'domContentLoadedEventStart',
+    'domComplete',
+    'loadEventStart',
+    'loadEventEnd'
+]
+
 ATTEMPT_TIMES = 1
 
 def measure(site):
     # First flush DNS Cache
-    os.system('sudo ./dnsflush_ubuntu.sh')
+    os.system('sudo ./dnsflush.sh')
 
     # Fake User Agent as mobile Safari
     opts = Options()
     opts.add_argument("user-agent=Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile Safari/<WebKit Rev>")
     driver = webdriver.Chrome(chrome_options=opts)
     driver.get(site)
-    navigationStart = driver.execute_script("return window.performance.timing.navigationStart")    
-    eventEnd = driver.execute_script("return window.performance.timing.loadEventEnd")
 
-    requestStart = driver.execute_script("return window.performance.timing.requestStart")
-    responseStart = driver.execute_script("return window.performance.timing.responseStart")
+    chrome_measurements = []
 
-    chromeTotalTime = eventEnd - navigationStart
-    chromeResponseTime = responseStart - requestStart
+
+    for prop in TIMING_PROPERTIES:
+        print TIMING.format(prop=prop)
+        res = driver.execute_script(TIMING.format(prop=prop))
+        chrome_measurements.append(res)
+
     driver.quit()
 
     # Firefox Measurement
@@ -46,31 +71,39 @@ def measure(site):
     driver = webdriver.Firefox(firefox_profile=firefox_profile)
     driver.get(site)
 
-    navigationStart = driver.execute_script("return window.performance.timing.navigationStart")    
-    eventEnd = driver.execute_script("return window.performance.timing.loadEventEnd")
+    firefox_measurements = []
 
-    requestStart = driver.execute_script("return window.performance.timing.requestStart")
-    requestStart = driver.execute_script("return window.performance.timing.requestStart")
-    responseEnd = driver.execute_script("return window.performance.timing.responseEnd")
+    for prop in TIMING_PROPERTIES:
+        res = driver.execute_script(TIMING.format(prop=prop))
+        firefox_measurements.append(res)
 
-    firefoxTotalTime = eventEnd - navigationStart
-    firefoxResponseTime = responseStart - requestStart
+        #firefox_measurements.append(driver.execute_script(TIMING.format(prop=prop)))
+
     driver.quit()
 
     return {
-        'Chrome': [str(chromeTotalTime), str(chromeResponseTime)],
-        'Firefox': [str(firefoxTotalTime), str(firefoxResponseTime)],
+        'Chrome': chrome_measurements,
+        'Firefox': firefox_measurements
     }
 
+
+def write_header(filehandle):
+    filehandle.write('link,')
+    filehandle.write(str(TIMING_PROPERTIES).strip('[]').replace('\'', ''))
+    filehandle.write('\n')
 
 if __name__ == '__main__':
     todaystr = str(date.today()).replace('-', '_')
 
-    chrome_output = open('./measurement_chrome_{today}'.format(today=todaystr), 'wb')
-    firefox_output = open('./measurement_firefox_{today}'.format(today=todaystr), 'wb')
+    chrome_output_amp = open('./measurement_chrome_amp_{today}'.format(today=todaystr), 'wb')
+    chrome_output_non_amp = open('./measurement_chrome_non_amp{today}'.format(today=todaystr), 'wb')
+    firefox_output_amp = open('./measurement_firefox_amp{today}'.format(today=todaystr), 'wb')
+    firefox_output_non_amp = open('./measurement_firefox_non_amp{today}'.format(today=todaystr), 'wb')
 
-    chrome_output.write('link,non_amp_total,non_amp_response,amp_total,amp_response,attempt#\n')
-    firefox_output.write('link,non_amp_total,non_amp_response,amp_total,amp_response,attempt#\n')
+    write_header(chrome_output_amp)
+    write_header(chrome_output_non_amp)
+    write_header(firefox_output_amp)
+    write_header(firefox_output_non_amp)
 
     sites = open(SRC).readlines()
     for site in sites:
@@ -95,14 +128,38 @@ if __name__ == '__main__':
                 namp_res = None 
 
             if amp_res is not None and namp_res is not None:
-                chrome_res = amp + ',' + non_amp + ',' + namp_res['Chrome'][0] + ',' + namp_res['Chrome'][1] + ',' + amp_res['Chrome'][0] + ',' + amp_res['Chrome'][1] + ',' + str(i) + '\n'
-                firefox_res = amp + ',' + non_amp + ',' + namp_res['Firefox'][0] + ',' + namp_res['Firefox'][1] + ',' + amp_res['Firefox'][0] + ',' + amp_res['Firefox'][1] + ',' + str(i) + '\n'
+                chrome_res_amp = amp_res['Chrome']
+                firefox_res_amp = amp_res['Firefox']
+                chrome_res_nonamp = namp_res['Chrome']
+                firefox_res_nonamp= namp_res['Firefox']
 
-                print chrome_res
-                print firefox_res
+                for idx, prop in enumerate(chrome_res_amp):
+                    chrome_output_amp.write(str(prop))
+                    if idx == len(chrome_res_amp) - 1:
+                        chrome_output_amp.write('\n')
+                    else:
+                        chrome_output_amp.write(',')
 
-                #chrome_output.write(chrome_res)
-                #firefox_output.write(firefox_res)
+                for idx, prop in enumerate(firefox_res_amp):
+                    firefox_output_amp.write(str(prop))
+                    if idx == len(firefox_res_amp) - 1:
+                        firefox_output_amp.write('\n')
+                    else:
+                        firefox_output_amp.write(',')
+
+                for idx, prop in enumerate(chrome_res_nonamp):
+                    chrome_output_non_amp.write(str(prop))
+                    if idx == len(chrome_res_nonamp) - 1:
+                        chrome_output_non_amp.write('\n')
+                    else:
+                        chrome_output_non_amp.write(',')
+
+                for idx, prop in enumerate(firefox_res_nonamp):
+                    firefox_output_non_amp.write(str(prop))
+                    if idx == len(firefox_res_nonamp) - 1:
+                        firefox_output_non_amp.write('\n')
+                    else:
+                        firefox_output_non_amp.write(',')
 
             sleep(5)  # sleep 5 sec and try again
 
