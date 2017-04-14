@@ -46,7 +46,7 @@ ATTEMPT_TIMES = 1
 
 def measure(site):
     # First flush DNS Cache
-    os.system('sudo ./dnsflush.sh')
+    os.system('sudo ./dnsflush_ubuntu.sh')
 
     # Fake User Agent as mobile Safari
     opts = Options()
@@ -58,7 +58,6 @@ def measure(site):
 
 
     for prop in TIMING_PROPERTIES:
-        print TIMING.format(prop=prop)
         res = driver.execute_script(TIMING.format(prop=prop))
         chrome_measurements.append(res)
 
@@ -76,8 +75,6 @@ def measure(site):
     for prop in TIMING_PROPERTIES:
         res = driver.execute_script(TIMING.format(prop=prop))
         firefox_measurements.append(res)
-
-        #firefox_measurements.append(driver.execute_script(TIMING.format(prop=prop)))
 
     driver.quit()
 
@@ -132,6 +129,9 @@ if __name__ == '__main__':
                 firefox_res_amp = amp_res['Firefox']
                 chrome_res_nonamp = namp_res['Chrome']
                 firefox_res_nonamp= namp_res['Firefox']
+
+                if len(chrome_res_amp) == 0 or len(firefox_res_amp) == 0 or len(chrome_res_nonamp) == 0 or len(firefox_res_nonamp) == 0:
+                    continue
 
                 for idx, prop in enumerate(chrome_res_amp):
                     chrome_output_amp.write(str(prop))
