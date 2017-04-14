@@ -33,7 +33,6 @@ def count_amp(driver):
 
 
 def google_search(driver, keyword):
-
     driver.get("http://www.google.com")
     elem = driver.find_element_by_class_name("gsfi")
     elem.clear()
@@ -68,16 +67,20 @@ def chrome_search(keywords):
     google_search(driver, keywords[0])
 
 
-def firefox_search(keywords):
+def firefox_search(keyword):
     profile = webdriver.FirefoxProfile()
     profile.set_preference("general.useragent.override", MOBILE_USER_AGENT)
     driver = webdriver.Firefox(profile)
-    google_search(driver, keywords[0])
+    google_search(driver, keyword)
+    driver.close()
 
 
 def main():
-    keywords = ['China', 'Trump']
-    firefox_search(keywords)
+    keywords = open('./keywords.txt').readlines()
+    for keyword in keywords:
+        keyword = keyword.replace('\n', '')
+        firefox_search(keyword)
+        #firefox_search(keyword)
     #chrome_search(keywords)
 
 
