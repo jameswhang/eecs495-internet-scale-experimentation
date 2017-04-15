@@ -1,0 +1,2940 @@
+Page: 1
+Number of links: 14
+Number of amp: 5
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 10
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 21
+Number of amp: 5
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 5
+Number of amp: 16
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 3
+Number of amp: 6
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 19
+Number of amp: 0
+Page: 2
+Number of links: 14
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 14
+Number of amp: 18
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 23
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 6
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 9
+Number of amp: 12
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 4
+Number of amp: 6
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 15
+Number of amp: 15
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 20
+Number of amp: 4
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 7
+Number of amp: 35
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 15
+Number of amp: 10
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 17
+Number of amp: 11
+Page: 2
+Number of links: 1
+Number of amp: 8
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 2
+Number of amp: 7
+Page: 1
+Number of links: 17
+Number of amp: 12
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 18
+Number of amp: 0
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 16
+Number of amp: 5
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 15
+Number of amp: 12
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 6
+Number of amp: 3
+Page: 1
+Number of links: 14
+Number of amp: 2
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 8
+Number of amp: 11
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 12
+Number of amp: 2
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 4
+Number of amp: 5
+Page: 1
+Number of links: 16
+Number of amp: 0
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 13
+Number of amp: 11
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 12
+Number of amp: 1
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 13
+Number of amp: 2
+Page: 2
+Number of links: 6
+Number of amp: 2
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 7
+Number of amp: 0
+Page: 5
+Number of links: 5
+Number of amp: 2
+Page: 1
+Number of links: 6
+Number of amp: 18
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 6
+Number of amp: 3
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 8
+Number of amp: 26
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 31
+Number of amp: 4
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 25
+Number of amp: 5
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 11
+Number of amp: 4
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 23
+Number of amp: 2
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 26
+Number of amp: 13
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 27
+Number of amp: 2
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 9
+Number of amp: 5
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 30
+Number of amp: 3
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 19
+Number of amp: 5
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 7
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 21
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 17
+Number of amp: 2
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 13
+Number of amp: 3
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 15
+Number of amp: 12
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 3
+Number of amp: 7
+Page: 1
+Number of links: 11
+Number of amp: 5
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 20
+Number of amp: 4
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 10
+Number of amp: 6
+Page: 2
+Number of links: 1
+Number of amp: 8
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 13
+Number of amp: 1
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 2
+Number of amp: 3
+Page: 1
+Number of links: 25
+Number of amp: 5
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 6
+Number of amp: 3
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 3
+Number of amp: 7
+Page: 1
+Number of links: 15
+Number of amp: 6
+Page: 2
+Number of links: 4
+Number of amp: 5
+Page: 3
+Number of links: 2
+Number of amp: 8
+Page: 4
+Number of links: 2
+Number of amp: 8
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 11
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 9
+Number of amp: 13
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 15
+Number of amp: 12
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 23
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 19
+Number of amp: 13
+Page: 2
+Number of links: 4
+Number of amp: 5
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 13
+Number of amp: 4
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 23
+Number of amp: 3
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 12
+Number of amp: 2
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 2
+Number of amp: 8
+Page: 1
+Number of links: 26
+Number of amp: 5
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 21
+Number of amp: 11
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 9
+Number of amp: 13
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 12
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 14
+Number of amp: 13
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 24
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 19
+Number of amp: 13
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 14
+Number of amp: 3
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 23
+Number of amp: 3
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 11
+Number of amp: 3
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 2
+Number of amp: 8
+Page: 1
+Number of links: 26
+Number of amp: 5
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 23
+Number of amp: 7
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 23
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 7
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 21
+Number of amp: 3
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 23
+Number of amp: 13
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 21
+Number of amp: 10
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 27
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 12
+Number of amp: 5
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 26
+Number of amp: 1
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 1
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 10
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 16
+Number of amp: 12
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 19
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 0
+Page: 3
+Number of links: 11
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 5
+Number of amp: 14
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 3
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 19
+Number of amp: 2
+Page: 2
+Number of links: 4
+Number of amp: 5
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 2
+Number of amp: 8
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 5
+Number of amp: 19
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 8
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 13
+Number of amp: 12
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 9
+Number of amp: 15
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 15
+Number of amp: 18
+Page: 2
+Number of links: 3
+Number of amp: 6
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 13
+Number of amp: 13
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 6
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 17
+Number of amp: 8
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 19
+Number of amp: 2
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 5
+Number of amp: 14
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 3
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 18
+Number of amp: 2
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 3
+Number of amp: 7
+Page: 1
+Number of links: 3
+Number of amp: 7
+Page: 2
+Number of links: 1
+Number of amp: 9
+Page: 3
+Number of links: 5
+Number of amp: 4
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 17
+Number of amp: 4
+Page: 2
+Number of links: 5
+Number of amp: 5
+Page: 3
+Number of links: 1
+Number of amp: 9
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 4
+Number of amp: 6
+Page: 1
+Number of links: 42
+Number of amp: 2
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 12
+Number of amp: 1
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 4
+Page: 1
+Number of links: 10
+Number of amp: 6
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 21
+Number of amp: 1
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 20
+Number of amp: 3
+Page: 2
+Number of links: 4
+Number of amp: 5
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 15
+Number of amp: 1
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 4
+Number of amp: 6
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 9
+Number of amp: 4
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 14
+Number of amp: 3
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 10
+Number of amp: 3
+Page: 2
+Number of links: 5
+Number of amp: 4
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 13
+Number of amp: 3
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 7
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 14
+Number of amp: 4
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 14
+Number of amp: 12
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 13
+Number of amp: 5
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 11
+Number of amp: 4
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 13
+Number of amp: 8
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 8
+Number of amp: 1
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 17
+Number of amp: 24
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 1
+Page: 4
+Number of links: 13
+Number of amp: 0
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 18
+Number of amp: 10
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 12
+Number of amp: 0
+Page: 5
+Number of links: 8
+Number of amp: 1
+Page: 1
+Number of links: 10
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 16
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 15
+Number of amp: 0
+Page: 1
+Number of links: 20
+Number of amp: 18
+Page: 2
+Number of links: 11
+Number of amp: 2
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 12
+Number of amp: 1
+Page: 5
+Number of links: 12
+Number of amp: 1
+Page: 1
+Number of links: 15
+Number of amp: 11
+Page: 2
+Number of links: 3
+Number of amp: 7
+Page: 3
+Number of links: 9
+Number of amp: 3
+Page: 4
+Number of links: 13
+Number of amp: 0
+Page: 5
+Number of links: 12
+Number of amp: 1
+Page: 1
+Number of links: 10
+Number of amp: 4
+Page: 2
+Number of links: 9
+Number of amp: 4
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 10
+Number of amp: 3
+Page: 5
+Number of links: 12
+Number of amp: 1
+Page: 1
+Number of links: 19
+Number of amp: 10
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 13
+Number of amp: 0
+Page: 5
+Number of links: 13
+Number of amp: 0
+Page: 1
+Number of links: 18
+Number of amp: 14
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 12
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 15
+Number of amp: 1
+Page: 1
+Number of links: 16
+Number of amp: 12
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 12
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 15
+Number of amp: 10
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 13
+Number of amp: 0
+Page: 5
+Number of links: 13
+Number of amp: 0
+Page: 1
+Number of links: 9
+Number of amp: 18
+Page: 2
+Number of links: 4
+Number of amp: 5
+Page: 3
+Number of links: 2
+Number of amp: 8
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 12
+Number of amp: 16
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 16
+Number of amp: 1
+Page: 2
+Number of links: 10
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 3
+Number of amp: 7
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 8
+Number of amp: 18
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 11
+Number of amp: 12
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 8
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 15
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 11
+Number of amp: 10
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 7
+Number of amp: 13
+Page: 2
+Number of links: 6
+Number of amp: 3
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 11
+Number of amp: 4
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 5
+Number of amp: 4
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 17
+Number of amp: 9
+Page: 2
+Number of links: 6
+Number of amp: 4
+Page: 3
+Number of links: 8
+Number of amp: 1
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 6
+Number of amp: 4
+Page: 1
+Number of links: 20
+Number of amp: 10
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 12
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 3
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 20
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 11
+Number of amp: 2
+Page: 1
+Number of links: 22
+Number of amp: 24
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 32
+Number of amp: 28
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 18
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 12
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 12
+Number of amp: 1
+Page: 1
+Number of links: 13
+Number of amp: 15
+Page: 2
+Number of links: 13
+Number of amp: 0
+Page: 3
+Number of links: 3
+Number of amp: 0
+Page: 4
+Number of links: 3
+Number of amp: 0
+Page: 5
+Number of links: 3
+Number of amp: 0
+Page: 1
+Number of links: 17
+Number of amp: 15
+Page: 2
+Number of links: 13
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 5
+Number of amp: 5
+Page: 5
+Number of links: 13
+Number of amp: 0
+Page: 1
+Number of links: 13
+Number of amp: 1
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 0
+Page: 5
+Number of links: 6
+Number of amp: 1
+Page: 1
+Number of links: 19
+Number of amp: 10
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 15
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 16
+Number of amp: 17
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 12
+Number of amp: 1
+Page: 4
+Number of links: 13
+Number of amp: 0
+Page: 5
+Number of links: 12
+Number of amp: 1
+Page: 1
+Number of links: 19
+Number of amp: 11
+Page: 2
+Number of links: 3
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 3
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 12
+Number of amp: 1
+Page: 1
+Number of links: 21
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 8
+Number of amp: 22
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 14
+Number of amp: 0
+Page: 1
+Number of links: 13
+Number of amp: 15
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 14
+Number of amp: 2
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 11
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 14
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 19
+Number of amp: 21
+Page: 2
+Number of links: 11
+Number of amp: 2
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 16
+Number of amp: 0
+Page: 1
+Number of links: 28
+Number of amp: 20
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 12
+Number of amp: 18
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 12
+Number of amp: 1
+Page: 4
+Number of links: 16
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 5
+Number of amp: 6
+Page: 2
+Number of links: 5
+Number of amp: 5
+Page: 3
+Number of links: 5
+Number of amp: 5
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 7
+Number of amp: 4
+Page: 1
+Number of links: 17
+Number of amp: 0
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 13
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 9
+Number of amp: 1
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 1
+Page: 1
+Number of links: 21
+Number of amp: 1
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 13
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 10
+Number of amp: 2
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 22
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 18
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 13
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 12
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 23
+Number of amp: 0
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 11
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 29
+Number of amp: 2
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 5
+Number of amp: 5
+Page: 1
+Number of links: 30
+Number of amp: 1
+Page: 2
+Number of links: 15
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 23
+Number of amp: 0
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 3
+Page: 4
+Number of links: 9
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 32
+Number of amp: 1
+Page: 2
+Number of links: 11
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 3
+Page: 4
+Number of links: 11
+Number of amp: 1
+Page: 5
+Number of links: 11
+Number of amp: 1
+Page: 1
+Number of links: 29
+Number of amp: 1
+Page: 2
+Number of links: 7
+Number of amp: 2
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 22
+Number of amp: 4
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 39
+Number of amp: 0
+Page: 2
+Number of links: 23
+Number of amp: 0
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 22
+Number of amp: 2
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 2
+Page: 1
+Number of links: 31
+Number of amp: 0
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 3
+Page: 1
+Number of links: 12
+Number of amp: 4
+Page: 2
+Number of links: 8
+Number of amp: 2
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 17
+Number of amp: 0
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 13
+Number of amp: 2
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 6
+Number of amp: 5
+Page: 2
+Number of links: 5
+Number of amp: 5
+Page: 3
+Number of links: 6
+Number of amp: 4
+Page: 4
+Number of links: 6
+Number of amp: 4
+Page: 5
+Number of links: 6
+Number of amp: 2
+Page: 1
+Number of links: 19
+Number of amp: 23
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 7
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 20
+Number of amp: 9
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 15
+Number of amp: 13
+Page: 2
+Number of links: 7
+Number of amp: 3
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 4
+Number of amp: 6
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 16
+Number of amp: 4
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 6
+Number of amp: 3
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 13
+Number of amp: 0
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 11
+Number of amp: 0
+Page: 1
+Number of links: 18
+Number of amp: 1
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 7
+Number of amp: 2
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 12
+Number of amp: 1
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 11
+Number of amp: 10
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 8
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 8
+Number of amp: 11
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 7
+Number of amp: 3
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 11
+Number of amp: 10
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 13
+Number of amp: 10
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 14
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 12
+Number of amp: 10
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 12
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 7
+Number of amp: 2
+Page: 4
+Number of links: 6
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 12
+Number of amp: 1
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 11
+Number of amp: 2
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 8
+Number of amp: 2
+Page: 1
+Number of links: 14
+Number of amp: 0
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 8
+Number of amp: 0
+Page: 1
+Number of links: 11
+Number of amp: 10
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 7
+Number of amp: 3
+Page: 4
+Number of links: 8
+Number of amp: 2
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 18
+Number of amp: 10
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 13
+Number of amp: 10
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 16
+Number of amp: 10
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 18
+Number of amp: 10
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 13
+Number of amp: 11
+Page: 2
+Number of links: 9
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 7
+Number of amp: 3
+Page: 1
+Number of links: 19
+Number of amp: 1
+Page: 2
+Number of links: 8
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 18
+Number of amp: 10
+Page: 2
+Number of links: 9
+Number of amp: 1
+Page: 3
+Number of links: 10
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 2
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 16
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 14
+Number of amp: 2
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 9
+Number of amp: 1
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 12
+Number of amp: 11
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 10
+Number of amp: 0
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 17
+Number of amp: 1
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 8
+Number of amp: 2
+Page: 4
+Number of links: 12
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 12
+Number of amp: 4
+Page: 2
+Number of links: 4
+Number of amp: 6
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 9
+Number of amp: 1
+Page: 1
+Number of links: 30
+Number of amp: 0
+Page: 2
+Number of links: 8
+Number of amp: 1
+Page: 3
+Number of links: 13
+Number of amp: 0
+Page: 4
+Number of links: 9
+Number of amp: 1
+Page: 5
+Number of links: 10
+Number of amp: 0
+Page: 1
+Number of links: 19
+Number of amp: 2
+Page: 2
+Number of links: 10
+Number of amp: 0
+Page: 3
+Number of links: 10
+Number of amp: 0
+Page: 4
+Number of links: 11
+Number of amp: 0
+Page: 5
+Number of links: 11
+Number of amp: 0

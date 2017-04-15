@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from time import sleep
 import random
 
-resultfile = open('result_9.txt', 'wb')
+resultfile = open('result_12.txt', 'wb')
 
 MOBILE_USER_AGENT = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.1 Mobile/14E5239e Safari/602.1'
 
