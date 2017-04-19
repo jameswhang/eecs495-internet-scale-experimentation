@@ -8,7 +8,7 @@ import random
 import pprint
 import pickle
 
-PICKLE = open('prefetch_amp_size.pickle', 'wb')
+PICKLE = './pickles/prefetch_amp_size_{}.pickle'
 MOBILE_USER_AGENT = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.1 Mobile/14E5239e Safari/602.1'
 
 server = Server("/Users/jameswhang/Documents/projects/AMP/browsermob-proxy-2.1.4/bin/browsermob-proxy")
@@ -32,9 +32,19 @@ def google_search(driver, keyword):
     elem.clear()
     elem.send_keys(keyword)
     elem.send_keys(Keys.RETURN)
-    sleep(random.random() * 10 + 5)
-    pp.pprint(proxy.har) # returns a HAR JSON blob
-    pickle.dump(proxy.har, PICKLE)
+
+    if is_captcha(driver):
+        print 'CAPTCHA!!!'
+        r = raw_input()
+
+    sleep(random.random() * 15 + 10)
+
+    if is_captcha(driver):
+        print 'CAPTCHA!!!'
+        r = raw_input()
+
+    #pp.pprint(proxy.har) # returns a HAR JSON blob
+    pickle.dump(proxy.har, open(PICKLE.format(keyword), 'wb'))
 
 def main():
     profile  = webdriver.FirefoxProfile()
@@ -45,7 +55,6 @@ def main():
     for keyword in keywords:
         keyword = keyword.replace('\n', '')
         google_search(driver, keyword)
-
     driver.close()
 
 
