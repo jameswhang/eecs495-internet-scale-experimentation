@@ -77,6 +77,17 @@ def read_pickle(picklefile):
     other_sizes.append(other_size)
     total_sizes.append(total_size/1000)
 
+    linedata = ECDF(total_sizes)
+
+    plt.figure(figsize=(5.5,5.5))
+    plt.plot(linedata.x, linedata.y, lw=3)
+    plt.xlabel('Bytes(KB)', fontsize=14)
+    plt.ylabel('Cumulative Frequency', fontsize=14)
+
+    plt.savefig("prefetched_bytes.png", bbox_inches="tight")
+    plt.close()
+
+
 
 pickles = glob.glob('./pickles/*.pickle')
 
