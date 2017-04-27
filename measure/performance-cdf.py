@@ -8,8 +8,6 @@ import numpy
 import statsmodels
 from statsmodels.distributions.empirical_distribution import ECDF
 
-matplotlib.use('pdf')
-
 chrome_nonamp = 'measurement_chrome_non_amp2017_04_13'
 firefox_nonamp = 'measurement_firefox_non_amp2017_04_13'
 firefox_amp = 'measurement_firefox_amp2017_04_13'
@@ -33,23 +31,48 @@ def main():
     amp_data = []
     nonamp_data = []
 
+    amp_dns = []
+    nonamp_dns = []
+
+    amp_fb = []
+    nonamp_fb = []
+
     for line in open(firefox_nonamp, 'rb').readlines()[1:]:
         line = line.replace('\n', '')
         tokens = line.split(',')
         navigationStart = int(tokens[0])
         loadEventEnd = int(tokens[len(tokens)-1])
+        domainLookupStart = int(tokens[6])
+        domainLookupEnd = int(tokens[7])
+        requestStart = int(tokens[11])
+        responseStart = int(tokens[12])
 
         if loadEventEnd > navigationStart:
             nonamp_data.append(loadEventEnd - navigationStart)
 
+        if domainLookupEnd > domainLookupStart:
+            nonamp_dns.append(domainLookupEnd-domainLookupStart)
+        if responseStart > requestStart:
+            nonamp_fb.append(responseStart - requestStart)
+
     for line in open(firefox_amp, 'rb').readlines()[1:]:
         line = line.replace('\n', '')
         tokens = line.split(',')
+        domainLookupStart = int(tokens[6])
+        domainLookupEnd = int(tokens[7])
+
         navigationStart = int(tokens[0])
         loadEventEnd = int(tokens[len(tokens)-1])
 
+        requestStart = int(tokens[11])
+        responseStart = int(tokens[12])
+
         if loadEventEnd > navigationStart:
             amp_data.append(loadEventEnd - navigationStart)
+        if domainLookupEnd > domainLookupStart:
+            amp_dns.append(domainLookupEnd-domainLookupStart)
+        if responseStart > requestStart:
+            amp_fb.append(responseStart - requestStart)
 
     amp_linedata = ECDF(amp_data)
     nonamp_linedata = ECDF(nonamp_data)
@@ -58,16 +81,36 @@ def main():
     line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
     line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
 
-    # Create a legend for the first line.
-    first_legend = plt.legend(handles=[line1], loc=1)
-
-    ax = plt.gca().add_artist(first_legend)
-
-    # Create another legend for the second line.
-    plt.legend(handles=[line2], loc=4)
+    plt.legend(handles=[line1, line2], loc=4)
     plt.xlabel('Load Time(ms)', fontsize=14)
     plt.ylabel('Cumulative Frequency', fontsize=14)
-    plt.savefig("performance-1.pdf", bbox_inches="tight")
+    plt.savefig("performance-1.png", bbox_inches="tight")
+
+    amp_linedata = ECDF(amp_dns)
+    nonamp_linedata = ECDF(nonamp_dns)
+
+    plt.figure(figsize=(5.5,5.5))
+    line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
+    line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
+
+    # Create another legend for the second line.
+    plt.legend(handles=[line1, line2], loc=4)
+    plt.xlabel('Time for DNS Query(ms)', fontsize=14)
+    plt.ylabel('Cumulative Frequency', fontsize=14)
+    plt.savefig("performance-dns.png", bbox_inches="tight")
+
+    amp_linedata = ECDF(amp_fb)
+    nonamp_linedata = ECDF(nonamp_fb)
+
+    plt.figure(figsize=(5.5,5.5))
+    line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
+    line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
+
+    # Create another legend for the second line.
+    plt.legend(handles=[line1, line2], loc=4)
+    plt.xlabel('Time taken for first byte (ms)', fontsize=14)
+    plt.ylabel('Cumulative Frequency', fontsize=14)
+    plt.savefig("performance-fb.png", bbox_inches="tight")
     plt.close()
 
 
