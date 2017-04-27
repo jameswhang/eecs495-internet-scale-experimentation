@@ -55,8 +55,16 @@ def main():
     nonamp_linedata = ECDF(nonamp_data)
 
     plt.figure(figsize=(5.5,5.5))
-    plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
-    plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
+    line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
+    line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
+
+    # Create a legend for the first line.
+    first_legend = plt.legend(handles=[line1], loc=1)
+
+    ax = plt.gca().add_artist(first_legend)
+
+    # Create another legend for the second line.
+    plt.legend(handles=[line2], loc=4)
     plt.xlabel('Load Time(ms)', fontsize=14)
     plt.ylabel('Cumulative Frequency', fontsize=14)
     plt.savefig("performance-1.pdf", bbox_inches="tight")
