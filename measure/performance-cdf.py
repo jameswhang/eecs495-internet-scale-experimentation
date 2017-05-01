@@ -77,40 +77,63 @@ def main():
     amp_linedata = ECDF(amp_data)
     nonamp_linedata = ECDF(nonamp_data)
 
-    plt.figure(figsize=(5.5,5.5))
+    plt.figure(figsize=(4,3))
     line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
     line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
+    plt.legend(handles=[line1, line2], loc=2)
+    plt.xlabel('Page loading time (ms)')
+    plt.ylim(0,1)
+    plt.ylabel('CDF')
+    plt.xscale("log")
+    plt.savefig("figs/performance-plt.pdf", bbox_inches="tight")
+    plt.savefig("figs/performance-plt.png", bbox_inches="tight")
 
+    """
+    plt.figure(figsize=(4,3))
+    line1, = plt.plot(amp_linedata.x, 1-amp_linedata.y, lw=3, label='AMP')
+    line2, = plt.plot(nonamp_linedata.x, 1-nonamp_linedata.y, lw=3, label='Non AMP')
     plt.legend(handles=[line1, line2], loc=4)
     plt.xlabel('Load Time(ms)', fontsize=14)
     plt.ylabel('Cumulative Frequency', fontsize=14)
-    plt.savefig("performance-1.png", bbox_inches="tight")
+    plt.yscale('symlog', linthreshy=0.1)
+    plt.yticks([0, .01, .1, .5, 1], ["1", ".99", ".9", ".5", "0"])
+    #plt.yscale('log', linthreshy=0.1)
+    #plt.yticks([.01, .1, .5, 1], [".99", ".9", ".5", "0"])
+    plt.gca().invert_yaxis()
+    plt.savefig("figs/performance-plt.log.pdf", bbox_inches="tight")
+    """
 
     amp_linedata = ECDF(amp_dns)
     nonamp_linedata = ECDF(nonamp_dns)
 
-    plt.figure(figsize=(5.5,5.5))
+    plt.figure(figsize=(4,3))
     line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
     line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
 
     # Create another legend for the second line.
     plt.legend(handles=[line1, line2], loc=4)
-    plt.xlabel('Time for DNS Query(ms)', fontsize=14)
-    plt.ylabel('Cumulative Frequency', fontsize=14)
-    plt.savefig("performance-dns.png", bbox_inches="tight")
+    plt.xlabel('Time for DNS Query(ms)')
+    plt.ylim(0,1)
+    plt.ylabel('CDF')
+    plt.xscale("log")
+    plt.savefig("figs/performance-dns.pdf", bbox_inches="tight")
+    plt.savefig("figs/performance-dns.png", bbox_inches="tight")
 
     amp_linedata = ECDF(amp_fb)
     nonamp_linedata = ECDF(nonamp_fb)
 
-    plt.figure(figsize=(5.5,5.5))
+    plt.figure(figsize=(4,3))
     line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
     line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
 
     # Create another legend for the second line.
     plt.legend(handles=[line1, line2], loc=4)
-    plt.xlabel('Time taken for first byte (ms)', fontsize=14)
-    plt.ylabel('Cumulative Frequency', fontsize=14)
-    plt.savefig("performance-fb.png", bbox_inches="tight")
+    plt.xlabel('Time to first byte (ms)')
+    plt.ylabel('CDF')
+    plt.ylim(0,1)
+    plt.xscale("log")
+    plt.savefig("figs/performance-fb.pdf", bbox_inches="tight")
+    plt.savefig("figs/performance-fb.png", bbox_inches="tight")
     plt.close()
 
 
