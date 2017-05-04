@@ -88,7 +88,16 @@ def read_pickle(picklefile, is_amp):
 
     for entry in entries:
         total_size += entry[u'response'][u'bodySize']
-        urls.append(entry[u'request'][u'url'])
+        url = entry[u'request'][u'url']
+        domains =  url.split('/')[2].split('.')
+        if domains[-1] == 'com' or domains[-1] == 'net':
+            domain = domains[-2] + '.' + domains[-1]
+        else:
+            domain = url.split('/')[2]
+        
+        if domain not in urls:
+            urls.append(domain)
+    
 
     for entry in entries:
         cum_number_in += 1
@@ -112,22 +121,43 @@ def read_pickle(picklefile, is_amp):
         size_over_time.append((size_data[0], cum_size/total_size))
         data.append((size_data[0], cum_num/total_num))
 
-    if not is_amp:
-        print urls
-
-    return data, size_over_time
+    return data, size_over_time, urls
 
 amp_pickles = glob.glob('./amp_pickles/*.pickle')
 nonamp_pickles = glob.glob('./nonamp_pickles/*.pickle')
 
 assert len(amp_pickles) == len(nonamp_pickles)
 
+
+amp_dns_lens = []  # Number of Domain resolutions to be made for AMP
+nonamp_dns_lens = []  # Number of Domain resolutions to be made for Non AMP
+
 for i in range(len(amp_pickles)):
     amp = amp_pickles[i]
     nonamp = nonamp_pickles[i]
 
-    amp_data, amp_size = read_pickle(amp, True)
-    nonamp_data, nonamp_size = read_pickle(nonamp, False)
+    amp_data, amp_size, amp_domains = read_pickle(amp, True)
+    nonamp_data, nonamp_size, nonamp_domains = read_pickle(nonamp, False)
 
-    make_cdf(amp_data, nonamp_data, './figs/num_obj_' + str(i), '% of number of objects loaded')
-    make_cdf(amp_size, nonamp_size, './figs/bytes_in_' + str(i), '% of bytes loaded')
+    amp_dns_lens.append(len(amp_domains))
+    nonamp_dns_lens.append(len(nonamp_domains))
+
+    #make_cdf(amp_data, nonamp_data, './figs/num_obj_' + str(i), '% of number of objects loaded')
+    #make_cdf(amp_size, nonamp_size, './figs/bytes_in_' + str(i), '% of bytes loaded')
+
+
+amp_dns_linedata = ECDF(amp_dns_lens)
+nonamp_dns_linedata = ECDF(nonamp_dns_lens)
+
+plt.figure(figsize=(5.5,5.5))
+line1, = plt.plot(amp_dns_linedata.x, amp_dns_linedata.y, lw=3, label='AMP')
+line2, = plt.plot(nonamp_dns_linedata.x, nonamp_dns_linedata.y, lw=3, label='Non AMP')
+
+plt.legend(handles=[line1, line2], loc=4)
+plt.xlabel('Number of Domain Resolved during Page Load')
+plt.ylim(0,1)
+plt.ylabel('CDF')
+plt.savefig("figs/domain.pdf", bbox_inches="tight")
+plt.savefig("figs/domain.png", bbox_inches="tight")
+plt.close()
+
