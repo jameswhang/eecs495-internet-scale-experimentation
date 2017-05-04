@@ -25,19 +25,41 @@ def make_cdf(amp_data, nonamp_data, filename, ylabel):
     # I found both of these in my script, not sure what the difference was,
     # might be slightly different.
     plt.figure(figsize=(5.5,5.5))
+
+    '''
+    for i in range(len(amp_data) - 1):
+        plt.plot([amp_data[i][0], amp_data[i][1]], [amp_data[i+1][0], amp_data[i+1][1]], 'k-', lw=3)
+
+    for i in range(len(nonamp_data) - 1):
+        plt.plot([nonamp_data[i][0], nonamp_data[i][1]], [nonamp_data[i+1][0], nonamp_data[i+1][1]], 'k-', lw=3)
+    '''
+
+    amp_data_x = [tup[0] for tup in amp_data]
+    amp_data_y = [tup[1] for tup in amp_data]
+
+    nonamp_data_x = [tup[0] for tup in nonamp_data]
+    nonamp_data_y = [tup[1] for tup in nonamp_data]
+
+    line1, = plt.plot(amp_data_x, amp_data_y, marker='o', color='r', label='AMP')
+    line2, = plt.plot(nonamp_data_x, nonamp_data_y, marker='o', color='b', label='Non AMP')
+
+    '''
     for tup in amp_data:
         plt.plot(tup[0], tup[1], lw=3, marker='o', markersize=3, color="red", label="AMP")
     for tup in nonamp_data:
         plt.plot(tup[0], tup[1], lw=3, marker='o', markersize=3, color="blue", label="Non AMP")
+    '''
+    plt.legend(handles=[line1, line2], loc=4)
+
     plt.xlabel('Time(s)', fontsize=14)
     plt.ylabel(ylabel, fontsize=14)
 
-    plt.savefig("{}.pdf".format(filename), bbox_inches="tight")
+    plt.savefig("{}.png".format(filename), bbox_inches="tight")
     plt.close()
 
 
 def parse_time(time_str):
-    print time_str
+    #print time_str
     startDT = time_str.split('T')[1].replace('Z', '').split('-')[0]
     minute = int(startDT.split(':')[-2])
     seconds = float(startDT.split(':')[-1])
@@ -62,8 +84,11 @@ def read_pickle(picklefile, is_amp):
     total_size = 0
     cum_size = 0
 
+    urls = []
+
     for entry in entries:
         total_size += entry[u'response'][u'bodySize']
+        urls.append(entry[u'request'][u'url'])
 
     for entry in entries:
         cum_number_in += 1
@@ -72,7 +97,6 @@ def read_pickle(picklefile, is_amp):
         start = parse_time(entry[u'startedDateTime'])
         time = entry[u'time'] / 1000
         endtime = start + time
-
         size_data.append((endtime-time_initial, size))
 
     total_num = len(size_data)
@@ -88,12 +112,22 @@ def read_pickle(picklefile, is_amp):
         size_over_time.append((size_data[0], cum_size/total_size))
         data.append((size_data[0], cum_num/total_num))
 
+    if not is_amp:
+        print urls
+
     return data, size_over_time
 
-pickles = glob.glob('./amp_pickles/*.pickle')
+amp_pickles = glob.glob('./amp_pickles/*.pickle')
+nonamp_pickles = glob.glob('./nonamp_pickles/*.pickle')
 
-nonamp_data, nonamp_size = read_pickle('washingtonpost.nonamp.pickle', False)
-amp_data, amp_size = read_pickle('washingtonpost.amp.pickle', True)
+assert len(amp_pickles) == len(nonamp_pickles)
 
-make_cdf(amp_data, nonamp_data, 'num_obj2', '% of Objects Loaded (Number)')
-make_cdf(amp_size, nonamp_size, 'bytes_in2', '% of bytes loaded')
+for i in range(len(amp_pickles)):
+    amp = amp_pickles[i]
+    nonamp = nonamp_pickles[i]
+
+    amp_data, amp_size = read_pickle(amp, True)
+    nonamp_data, nonamp_size = read_pickle(nonamp, False)
+
+    make_cdf(amp_data, nonamp_data, './figs/num_obj_' + str(i), '% of number of objects loaded')
+    make_cdf(amp_size, nonamp_size, './figs/bytes_in_' + str(i), '% of bytes loaded')
