@@ -56,6 +56,7 @@ def read_pickle(picklefile, is_amp):
     time_final = time_initial
 
     size_data = []
+    dns_data = []
     data = []
 
     total_size = 0
@@ -73,12 +74,11 @@ def read_pickle(picklefile, is_amp):
         endtime = start + time
 
         size_data.append((endtime-time_initial, size))
-        #data.append((endtime-time_initial, percentage))
 
     total_num = len(size_data)
     size_data_sorted = sorted(size_data, key=lambda tup: tup[0])
-
     size_over_time = []
+
     cum_size = 0
     cum_num = 0
 

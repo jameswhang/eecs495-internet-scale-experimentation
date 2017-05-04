@@ -8,8 +8,6 @@ import numpy
 import statsmodels
 from statsmodels.distributions.empirical_distribution import ECDF
 
-#matplotlib.use('png')
-
 chrome_nonamp = 'measurement_chrome_non_amp2017_04_14'
 firefox_nonamp = 'measurement_firefox_non_amp2017_04_13'
 firefox_amp = 'measurement_firefox_amp2017_04_13'
@@ -18,7 +16,6 @@ chrome_amp = 'measurement_chrome_amp_2017_04_14'
 def make_cdf(data, label, filename):
     # I found both of these in my script, not sure what the difference was,
     # might be slightly different.
-    #linedata = statsmodels.tools.tools.ECDF(data) #linedata = ECDF(data)
     linedata = ECDF(data)
 
     plt.figure(figsize=(5.5,5.5))
@@ -83,10 +80,6 @@ def main():
             loadTime = loadEventEnd - navigationStart
             dnsQueryTime = domainLookupEnd - domainLookupStart
             amp_data.append(loadTime - dnsQueryTime)
-
-    print amp_data
-    print chrome_amp_data
-    print nonamp_data
 
     chrome_amp_linedata = ECDF(chrome_amp_data)
     amp_linedata = ECDF(amp_data)
