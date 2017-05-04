@@ -1,5 +1,6 @@
 from __future__ import division
 
+import json
 import pprint
 import time
 import glob
@@ -20,43 +21,79 @@ script_sizes = []
 other_sizes = []
 total_sizes = []
 
-def make_cdf(data, label, filename):
+def make_cdf(amp_data, nonamp_data, filename, ylabel):
     # I found both of these in my script, not sure what the difference was,
     # might be slightly different.
-    #linedata = statsmodels.tools.tools.ECDF(data) #linedata = ECDF(data)
-    linedata = ECDF(data)
-
     plt.figure(figsize=(5.5,5.5))
-    plt.plot(linedata.x, linedata.y, lw=3, label=label)
-    plt.xlabel('Bytes(KB)', fontsize=14)
-    plt.ylabel('Cumulative Frequency', fontsize=14)
+    for tup in amp_data:
+        plt.plot(tup[0], tup[1], lw=3, marker='o', markersize=3, color="red", label="AMP")
+    for tup in nonamp_data:
+        plt.plot(tup[0], tup[1], lw=3, marker='o', markersize=3, color="blue", label="Non AMP")
+    plt.xlabel('Time(s)', fontsize=14)
+    plt.ylabel(ylabel, fontsize=14)
 
-    plt.savefig(filename+".pdf", bbox_inches="tight")
+    plt.savefig("{}.pdf".format(filename), bbox_inches="tight")
     plt.close()
 
 
-def read_pickle(picklefile):
-    d = pickle.load(open(picklefile, 'rb'))
+def parse_time(time_str):
+    print time_str
+    startDT = time_str.split('T')[1].replace('Z', '').split('-')[0]
+    minute = int(startDT.split(':')[-2])
+    seconds = float(startDT.split(':')[-1])
+    return minute * 60 + seconds
+
+def read_pickle(picklefile, is_amp):
+    with open(picklefile, 'rb') as pickle_file:
+        d = pickle.load(pickle_file)
+
     entries = d[u'log'][u'entries']
 
-    number_in = 0
+    cum_number_in = 0
     total_number = len(entries)
 
-    time_initial = entries[0][u'startedDateTime']
+    time_initial = parse_time(entries[0][u'startedDateTime'])
     time_final = time_initial
 
+    size_data = []
+    data = []
+
+    total_size = 0
+    cum_size = 0
+
     for entry in entries:
+        total_size += entry[u'response'][u'bodySize']
+
+    for entry in entries:
+        cum_number_in += 1
         size = entry[u'response'][u'bodySize']
-        startDT = entry[u'startedDateTime'].split('T')[1].split('-')[0]
-        time = entry[u'time']
+        cum_size += size
+        start = parse_time(entry[u'startedDateTime'])
+        time = entry[u'time'] / 1000
+        endtime = start + time
 
-        print startDT
+        size_data.append((endtime-time_initial, size))
+        #data.append((endtime-time_initial, percentage))
 
+    total_num = len(size_data)
+    size_data_sorted = sorted(size_data, key=lambda tup: tup[0])
 
-pickles = glob.glob('./pickles/*.pickle')
+    size_over_time = []
+    cum_size = 0
+    cum_num = 0
 
-for picklefile in pickles:
-    read_pickle(picklefile)
-    break
+    for size_data in size_data_sorted:
+        cum_size += size_data[1]
+        cum_num += 1
+        size_over_time.append((size_data[0], cum_size/total_size))
+        data.append((size_data[0], cum_num/total_num))
 
+    return data, size_over_time
 
+pickles = glob.glob('./amp_pickles/*.pickle')
+
+nonamp_data, nonamp_size = read_pickle('washingtonpost.nonamp.pickle', False)
+amp_data, amp_size = read_pickle('washingtonpost.amp.pickle', True)
+
+make_cdf(amp_data, nonamp_data, 'num_obj2', '% of Objects Loaded (Number)')
+make_cdf(amp_size, nonamp_size, 'bytes_in2', '% of bytes loaded')
