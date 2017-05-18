@@ -17,6 +17,8 @@ AMP_SCRIPTS = ['preconnect.gif', 'amp-analytics-0.1.js', 'v0/amp-ad-0.1.js', 'v0
 
 MIMETYPE = ['css', 'javascript', 'image', 'html']
 
+obj_types = ['javascript', 'image', 'css', 'html', 'others']
+
 text_sizes = []
 image_sizes = []
 script_sizes = []
@@ -30,7 +32,7 @@ html_objects = []
 other_objects = []
 
 def make_cdf(amp_data, nonamp_data, filename, ylabel):
-    plt.figure(figsize=(5.5,5.5))
+    plt.figure(figsize=(4,3))
 
     amp_data_x = [tup[0] for tup in amp_data]
     amp_data_y = [tup[1] for tup in amp_data]
@@ -52,7 +54,7 @@ def make_cdf(amp_data, nonamp_data, filename, ylabel):
 def make_cdf_marker(amp_data, nonamp_data, filename, ylabel):
     # I found both of these in my script, not sure what the difference was,
     # might be slightly different.
-    plt.figure(figsize=(5.5,5.5))
+    plt.figure(figsize=(4,3))
 
     amp_data_x = [tup[0] for tup in amp_data]
     amp_data_y = [tup[1] for tup in amp_data]
@@ -89,28 +91,33 @@ def add_object_type_entry(mime_type):
     else:
         return 'x'
 
+def obj_type_fig_title(objtype):
+    if objtype == 'javascript':
+        return 'JavaScript'
+    elif objtype == 'image':
+        return 'Image'
+    elif objtype == 'css':
+        return 'CSS'
+    elif objtype == 'html':
+        return 'HTML'
+    else:
+        return 'Other (Fonts, JSON, etc.)'
 
-def make_obj_type_cdf(obj_diff):
-    amp_dns_linedata = ECDF(amp_dns_lens)
-    nonamp_dns_linedata = ECDF(nonamp_dns_lens)
+def make_obj_type_cdf(amp_obj_types, nonamp_obj_types):
+    for obj_type in obj_types:
+        amp_linedata = ECDF(amp_obj_types[obj_type])
+        nonamp_linedata = ECDF(nonamp_obj_types[obj_type])
 
-    plt.figure(figsize=(5.5,5.5))
-    line1, = plt.plot(amp_dns_linedata.x, amp_dns_linedata.y, lw=3, label='AMP')
-    line2, = plt.plot(nonamp_dns_linedata.x, nonamp_dns_linedata.y, lw=3, label='Non AMP')
+        objname = obj_type_fig_title(obj_type)
+        plt.figure(figsize=(4,3))  # TODO: might need to fix this
+        line1, = plt.plot(amp_linedata.x, amp_linedata.y, lw=3, label='AMP')
+        line2, = plt.plot(nonamp_linedata.x, nonamp_linedata.y, lw=3, label='Non AMP')
 
-    plt.legend(handles=[line1, line2], loc=4)
-    plt.xlabel('Number of Domain Resolved during Page Load')
-    plt.ylim(0,1)
-    plt.ylabel('CDF')
-    plt.savefig("figs/domain.pdf", bbox_inches="tight")
-    plt.savefig("figs/domain.png", bbox_inches="tight")
-    plt.close()
-
-
+        plt.savefig('figs/' + obj_type + '.pdf', bbox_inches="tight")
+        plt.close()
 
 
 def parse_time(time_str):
-    #print time_str
     startDT = time_str.split('T')[1].replace('Z', '').split('-')[0]
     minute = int(startDT.split(':')[-2])
     seconds = float(startDT.split(':')[-1])
@@ -230,7 +237,24 @@ type_diffs = {
     'others': []
 }
 
-obj_types = ['javascript', 'image', 'css', 'html', 'others']
+amp_obj_types = {
+    'javascript': [],
+    'image': [],
+    'css': [],
+    'html': [],
+    'others': []
+}
+
+
+nonamp_obj_types = {
+    'javascript': [],
+    'image': [],
+    'css': [],
+    'html': [],
+    'others': []
+}
+
+
 
 for i in range(len(amp_pickles)):
     amp = amp_pickles[i]
@@ -247,19 +271,25 @@ for i in range(len(amp_pickles)):
 
     for objtype in obj_types:
         type_diffs[objtype].append(nonamp_objtype[objtype] - amp_objtype[objtype])
+        amp_obj_types[objtype].append(amp_objtype[objtype])
+        nonamp_obj_types[objtype].append(nonamp_objtype[objtype])
 
-    make_cdf(amp_data, nonamp_data, './figs/num_obj_' + str(i), '% of number of objects loaded')
-    make_cdf(amp_size, nonamp_size, './figs/bytes_in_' + str(i), '% of bytes loaded')
+    #make_cdf(amp_data, nonamp_data, './figs/num_obj_' + str(i), '% of number of objects loaded')
+    #make_cdf(amp_size, nonamp_size, './figs/bytes_in_' + str(i), '% of bytes loaded')
     
+for objtype in type_diffs:
+    print objtype + ' : ' + str(numpy.median(type_diffs[objtype]))
 
-make_obj_type_cdf(type_diffs)
+make_obj_type_cdf(amp_obj_types, nonamp_obj_types)
+"""
 
-
+print 'Median Number of DNS Resolved in AMP page: ' + str(numpy.median(amp_dns_lens))
+print 'Median Number of DNS Resolved in Non AMP page: ' + str(numpy.median(nonamp_dns_lens))
 
 amp_dns_linedata = ECDF(amp_dns_lens)
 nonamp_dns_linedata = ECDF(nonamp_dns_lens)
 
-plt.figure(figsize=(5.5,5.5))
+plt.figure(figsize=(4,3))
 line1, = plt.plot(amp_dns_linedata.x, amp_dns_linedata.y, lw=3, label='AMP')
 line2, = plt.plot(nonamp_dns_linedata.x, nonamp_dns_linedata.y, lw=3, label='Non AMP')
 
@@ -276,7 +306,10 @@ plt.close()
 amp_obj_linedata = ECDF(amp_objs)
 nonamp_obj_linedata = ECDF(nonamp_objs)
 
-plt.figure(figsize=(5.5,5.5))
+print 'Median Number of Objects in AMP page: ' + str(numpy.median(amp_objs))
+print 'Median Number of Objects in Non AMP page: ' + str(numpy.median(nonamp_objs))
+
+plt.figure(figsize=(4,3))
 line1, = plt.plot(amp_obj_linedata.x, amp_obj_linedata.y, lw=3, label='AMP')
 line2, = plt.plot(nonamp_obj_linedata.x, nonamp_obj_linedata.y, lw=3, label='Non AMP')
 
@@ -289,3 +322,4 @@ plt.savefig("figs/number_of_objs.png", bbox_inches="tight")
 plt.close()
 
 
+"""
